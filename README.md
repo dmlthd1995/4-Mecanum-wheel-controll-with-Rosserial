@@ -1,5 +1,5 @@
 # Ros_serial_arduino_for-mecanum_wheel
-Ros_serial_arduino_for mecanum_wheel
+Arduino mega, orion board based 4 macanum wheel controll with Rosserial
 
 ![image](https://user-images.githubusercontent.com/47591345/61575494-853d0400-ab07-11e9-9f7b-6321b9964c70.png)
 
