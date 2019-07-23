@@ -24,27 +24,27 @@ $ rostopic list
 /cmd_vel
 ***
 ## ●명령어
-$ roscore
-$ rosrun rosserial_python serial_node.py /dev/ttyACM0  (연결 안될 시 물리포트넘버를 확인해 주세요.)
-$ rostopic pub -1 /cmd_vel geometry_msgs/Twist '[x, y, 0]' '[0, 0, z]' (x, y, z에 임의값 입력하시면 됩니다.)
+$ roscore  
+$ rosrun rosserial_python serial_node.py /dev/ttyACM0  (연결 안될 시 물리포트넘버를 확인해 주세요.)  
+$ rostopic pub -1 /cmd_vel geometry_msgs/Twist '[x, y, 0]' '[0, 0, z]' (x, y, z에 임의값 입력하시면 됩니다.)  
 ***
 ## ●Example
 ### -대각선
-$ rostopic pub -1 /cmd_vel geometry/Twist '[1.5, 1.5, 0]' '[0, 0, 0]'
-$ rostopic pub -1 /cmd_vel geometry/Twist '[-1.5, -1.5, 0]' '[0, 0, 0]’
+$ rostopic pub -1 /cmd_vel geometry/Twist '[1.5, 1.5, 0]' '[0, 0, 0]'  
+$ rostopic pub -1 /cmd_vel geometry/Twist '[-1.5, -1.5, 0]' '[0, 0, 0]’  
 
 ### -전진, 후진, 좌측, 우측, 회전
-rostopic pub -1 /cmd_vel geometry/Twist '[1.5, 0, 0]' '[0, 0, 0]'
-rostopic pub -1 /cmd_vel geometry/Twist '[-1.5, 0, 0]' '[0, 0, 0]'
-rostopic pub -1 /cmd_vel geometry/Twist '[0, 1.5, 0]' '[0, 0, 0]'
-rostopic pub -1 /cmd_vel geometry/Twist '[0, -1.5, 0]' '[0, 0, 0]'
-rostopic pub -1 /cmd_vel geometry/Twist '[0, 0, 0]' '[0, 0, 3]'
+$ rostopic pub -1 /cmd_vel geometry/Twist '[1.5, 0, 0]' '[0, 0, 0]'  
+$ rostopic pub -1 /cmd_vel geometry/Twist '[-1.5, 0, 0]' '[0, 0, 0]'  
+$ rostopic pub -1 /cmd_vel geometry/Twist '[0, 1.5, 0]' '[0, 0, 0]'  
+$ rostopic pub -1 /cmd_vel geometry/Twist '[0, -1.5, 0]' '[0, 0, 0]'  
+$ rostopic pub -1 /cmd_vel geometry/Twist '[0, 0, 0]' '[0, 0, 3]'  
 
 ### -원
-rostopic pub -1 /cmd_vel geometry/Twist '[1.5, 0, 0]' '[0, 0, 2]’
+$ rostopic pub -1 /cmd_vel geometry/Twist '[1.5, 0, 0]' '[0, 0, 2]’  
 
 ### -중심점 바라보면서 원그리기
-rostopic pub -1 /cmd_vel geometry/Twist '[0, 1.5, 0]' '[0, 0, 2]'
+$ rostopic pub -1 /cmd_vel geometry/Twist '[0, 1.5, 0]' '[0, 0, 2]'  
 ***
 ## ●4-마카넘휠 모바일 플랫폼 외형
 ![image](https://user-images.githubusercontent.com/47591345/61575598-760a8600-ab08-11e9-99c9-1270fb560e30.png)
